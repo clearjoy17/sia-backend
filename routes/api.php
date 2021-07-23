@@ -29,5 +29,5 @@ Route::group(['middleware'=>'auth:api'], function(){
     Route::get('/stocks/{stock}', [StockController::class, 'show']);
     Route::put('/stocks/{stock}', [StockController::class, 'update']);
     Route::delete('/stocks/{stock}', [StockController::class, 'destroy']);
-~
+
 });
